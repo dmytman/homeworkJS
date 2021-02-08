@@ -6,4 +6,4 @@ console.log(userName);
 const payment = prompt('Будь ласка, введіть суму до оплати:');
 console.log(payment);
 
-console.log(alert(`Дякуємо, ${userName}! До сплати ${payment} грн.`));
+alert(`Дякуємо, ${userName}! До сплати ${payment} грн.`);

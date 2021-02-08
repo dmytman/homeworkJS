@@ -5,19 +5,19 @@ const lang = (prompt('Введіть свою країну : ua, en, ru, fr. '))
 console.log(lang)
 
 switch (lang) {
-  case 'ua','укр':
+  case 'ua':
     cost = alert('Ваш місяць Лютий');
     break;
 
-  case 'en','англ':
+  case 'en':
     cost = alert('Your month is February');
     break;
 
-  case 'ru','рус':
+  case 'ru':
     cost = alert('Ваш месяц Февраль');
     break;
 
-  case 'fr','фр':
+  case 'fr':
     cost = alert('Votre mois est février');
     break;
 
