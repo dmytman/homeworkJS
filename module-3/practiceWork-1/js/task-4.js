@@ -12,10 +12,10 @@ const cafe = {
     },
 };
 
-const entries = Object.entries(cafe);
-for (const entry of entries) {
-    const a = entry[0];
-    const b = entry[1];
+const entries1 = Object.entries(cafe);
+for (const entries2 of entries1) {
+    const a = entries2[0];
+    const b = entries2[1];
     console.log(`Ключ ${a} - Значення ${b}`);
 }
 console.log('P =', cafe.sum());
