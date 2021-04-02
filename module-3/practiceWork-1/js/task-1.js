@@ -1,10 +1,23 @@
 console.log('task-1.js');
 
-const user = {
-    userName: 'dmytro',
-    showUserName: 45,
+const user = {};
+
+user.userName = "dmytro";
+user.age = 45;
+user.showUserName = function () {
+    return this.userName;
 };
-user.updateAge = function(){
-    return this.showUserName + 1;
-}
+user.updateAge = function () {
+    const a = this.age += 1;  
+    return a;
+};
+
 console.log(user.updateAge());
+console.log(user.updateAge());
+console.log(user.updateAge());
+console.log(user.updateAge());
+console.log(user.updateAge());
+console.log(user.updateAge());
+console.log(user.updateAge());
+
+console.log(user.showUserName());
