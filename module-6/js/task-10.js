@@ -87,14 +87,13 @@ const users = [
   },
 ];
 
+const getSortedUniqueSkills = (users) => {
+  const total = users.reduce((index, item) => {
+    index.push(...item.skills);
+    return index;
+  }, []);
 
-const getSortedUniqueSkills = users => {
-   const result = users.reduce((acc, item) => {
-     acc.push(...item.skills);
-     return acc;
-   }, []);
-   return result.sort();
-   
+  return total.sort();
 };
 
 console.log(getSortedUniqueSkills(users));
