@@ -3,7 +3,7 @@ constructor(array) {
     this.items = array;
 }
 getItems(){
-    return storage.items
+    return this.items;
 }
 
 addItem(item){
